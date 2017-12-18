@@ -21,9 +21,14 @@
 		//element:被校验的元素对象
 		//params：规则对应的参数值
 		
-		$.ajax(){
-			
-		}
+		$.ajax({
+			async:flase,
+			success:function(data){
+				
+			},
+			url:"${pageContext.request.contextPath }/user/check",
+			data:{"username":$.}
+		});
 	});
 
 	$(function() {
