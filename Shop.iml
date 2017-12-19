@@ -51,5 +51,6 @@
     <orderEntry type="library" name="mail" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.0.4-bin" level="project" />
     <orderEntry type="library" name="standard" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
