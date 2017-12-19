@@ -17,6 +17,7 @@
 
 	//自定义校验规则		//规则名称			//执行函数
 	$.valitor.addMethod("checkUserExisted",function(value,element,params){
+		var flag= flase;
 		//value:输入的内容
 		//element:被校验的元素对象
 		//params：规则对应的参数值
@@ -24,11 +25,13 @@
 		$.ajax({
 			async:flase,
 			success:function(data){
-				
+				flag = data.isExist;
 			},
 			url:"${pageContext.request.contextPath }/user/check",
-			data:{"username":$.}
+			data:{"username":value}
 		});
+		
+		return flag;
 	});
 
 	$(function() {

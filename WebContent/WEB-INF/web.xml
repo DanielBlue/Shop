@@ -19,4 +19,24 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckUserExistServlet</display-name>
+    <servlet-name>CheckUserExistServlet</servlet-name>
+    <servlet-class>pers.mao.shop.web.CheckUserExistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckUserExistServlet</servlet-name>
+    <url-pattern>/user/check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckExistServlet</display-name>
+    <servlet-name>CheckExistServlet</servlet-name>
+    <servlet-class>pers.mao.shop.web.CheckExistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckExistServlet</servlet-name>
+    <url-pattern>/user/check</url-pattern>
+  </servlet-mapping>
 </web-app>
